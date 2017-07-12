@@ -55,7 +55,6 @@
               		{
               			"doubt": "doubt",
               			"falzy": "falzy",
-              			"protype": "protype",
               			"raze": "raze",
               			"stringe": "stringe"
               		}
@@ -64,7 +63,6 @@
 
 var doubt = require("doubt");
 var falzy = require("falzy");
-var protype = require("protype");
 var raze = require("raze");
 var stringe = require("stringe");
 
@@ -84,7 +82,7 @@ var maxelm = function maxelm(array, condition) {
 
 	if (falzy(condition)) {
 		condition = function condition(previous, next) {
-			if (protype(previous, NUMBER) && protype(next, NUMBER)) {
+			if (typeof previous == "number" && typeof next == "number") {
 				return Math.max(previous, next);
 			}
 
@@ -92,7 +90,7 @@ var maxelm = function maxelm(array, condition) {
 		};
 	}
 
-	if (!protype(condition, FUNCTION)) {
+	if (typeof condition != "function") {
 		throw new Error("invalid condition");
 	}
 

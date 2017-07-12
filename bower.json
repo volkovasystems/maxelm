@@ -1,6 +1,6 @@
 {
   "name": "maxelm",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Returns the maximum element of the array based on the condition.",
   "main": "maxelm.deploy.js",
   "support": "maxelm.support.js",
@@ -27,10 +27,9 @@
     "tests"
   ],
   "dependencies": {
-    "doubt": "^0.27.0",
+    "doubt": "^0.30.0",
     "falzy": "^0.20.0",
-    "protype": "^0.22.0",
-    "raze": "^0.30.0",
+    "raze": "^0.33.0",
     "stringe": "^0.4.0"
   }
 }
