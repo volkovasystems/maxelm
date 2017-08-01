@@ -155,13 +155,13 @@ describe( "maxelm", ( ) => {
 
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
-	describe( `"maxelm( [ 1, 2, 3, 4, 5 ]"`, ( ) => {
+	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] ) > 4"`, ( ) => {
 		it( `"should be equal to true"`, ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
-					return maxelm( [ 1, 2, 3, 4, 5 ] );
+					return maxelm( [ 1, 2, 3, 4, 5 ] ) > 4;
 				}
 
 			).value;
@@ -177,28 +177,12 @@ describe( "maxelm", ( ) => {
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
-					return assert.equal( maxelm( [ 1, 2, 3, 4, 5 ] ) > 6, false );
+					return maxelm( [ 1, 2, 3, 4, 5 ] ) > 6;
 				}
 
 			).value;
 
 			assert.equal( result, false );
-
-		} );
-	} );
-
-	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] )"`, ( ) => {
-		it( `"should be equal to 5"`, ( ) => {
-
-			let result = browser.url( bridgeURL ).execute(
-
-				function( ){
-					return maxelm( [ 1, 2, 3, 4, 5 ] );
-				}
-
-			).value;
-
-			assert.equal( result, 5 );
 
 		} );
 	} );
