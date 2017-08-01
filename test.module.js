@@ -72,7 +72,7 @@ const path = require( "path" );
 //: @server:
 
 describe( "maxelm", ( ) => {
-	
+
 	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] ) > 4"`, ( ) => {
 		it( "should be equal to true", ( ) => {
 
@@ -105,16 +105,14 @@ describe( "maxelm", ( ) => {
 		} );
 	} );
 } );
-
 
 //: @end-server
 
 
-//: @client: 
-
+//: @client:
 
 describe( "maxelm", ( ) => {
-	
+
 	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] ) > 4"`, ( ) => {
 		it( "should be equal to true", ( ) => {
 
@@ -147,8 +145,6 @@ describe( "maxelm", ( ) => {
 		} );
 	} );
 } );
-
-
 
 //: @end-client
 
@@ -157,45 +153,72 @@ describe( "maxelm", ( ) => {
 
 describe( "maxelm", ( ) => {
 
-	
-	let directory = __dirname;
-	let testBridge = path.resolve( directory, "bridge.html" );
-	let bridgeURL = `file://${ testBridge }`;
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
-	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] ) > 4"`, ( ) => {
-		it( "should be equal to true", ( ) => {
+	describe( `"maxelm( [ 1, 2, 3, 4, 5 ]"`, ( ) => {
+		it( `"should be equal to true"`, ( ) => {
 
-			assert.equal(disdo ( true, true ) );
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return maxelm( [ 1, 2, 3, 4, 5 ] );
+				}
+
+			).value;
+
+			assert.equal( result, true );
 
 		} );
 	} );
 
 	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] ) > 6"`, ( ) => {
-		it( "should be equal to false", ( ) => {
+		it( `"should be equal to false"`, ( ) => {
 
-			assert.equal(disdo ( true, true ) );
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return assert.equal( maxelm( [ 1, 2, 3, 4, 5 ] ) > 6, false );
+				}
+
+			).value;
+
+			assert.equal( result, false );
 
 		} );
 	} );
 
 	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] )"`, ( ) => {
-		it( "should be equal to 5", ( ) => {
+		it( `"should be equal to 5"`, ( ) => {
 
-			assert.equal(disdo ( true, true ) );
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return maxelm( [ 1, 2, 3, 4, 5 ] );
+				}
+
+			).value;
+
+			assert.equal( result, 5 );
 
 		} );
 	} );
 
 	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 )"`, ( ) => {
-		it( "should be equal to true", ( ) => {
+		it( `"should be equal to true"`, ( ) => {
 
-			assert.equal(disdo ( true, true ) );
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 );
+				}
+
+			).value;
+
+			assert.equal( result, true );
 
 		} );
 	} );
 
-
-	
 } );
 
 //: @end-bridge
