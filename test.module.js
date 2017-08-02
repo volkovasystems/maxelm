@@ -171,6 +171,7 @@ describe( "maxelm", ( ) => {
 		} );
 	} );
 
+
 	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] ) > 6"`, ( ) => {
 		it( `"should be equal to false"`, ( ) => {
 
@@ -186,6 +187,7 @@ describe( "maxelm", ( ) => {
 
 		} );
 	} );
+
 
 	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 )"`, ( ) => {
 		it( `"should be equal to true"`, ( ) => {
