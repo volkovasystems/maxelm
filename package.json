@@ -1,19 +1,17 @@
 {
 	"name": "maxelm",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "Returns the maximum element of the array based on the condition.",
 	"main": "maxelm.js",
 	"support": "maxelm.support.js",
 	"deploy": "maxelm.deploy.js",
 	"browser": "maxelm.deploy.js",
 	"scripts": {
-		"build": "babel maxelm.js --out-file maxelm.support.js --source-maps && webpack --progress --display-modules",
 		"pristine": "rsetmod clean && flxc execute ./.install.sh",
 		"clear": "rsetmod clean --clear",
-		"formal": "jesy apply '*.json'",
+		"build": "babel maxelm.js --out-file maxelm.support.js --source-maps && webpack --progress --display-modules",
 		"pretest": "npm run clear && npm run build",
-		"test": "node maxelm-test.js",
-		"posttest": "npm run formal"
+		"test": "node maxelm-test.js"
 	},
 	"repository": {
 		"type": "git",
@@ -38,7 +36,7 @@
 	},
 	"homepage": "https://github.com/volkovasystems/maxelm#readme",
 	"dependencies": {
-		"babel-runtime": "^6.23.0",
+		"babel-runtime": "^6.25.0",
 		"doubt": "^0.34.0",
 		"falzy": "^0.23.0",
 		"raze": "^0.34.0",
@@ -50,6 +48,6 @@
 		"babel-plugin-transform-runtime": "^6.23.0",
 		"babel-preset-latest": "^6.24.1",
 		"source-map-loader": "^0.2.1",
-		"webpack": "^3.4.0"
+		"webpack": "^3.4.1"
 	}
 }
