@@ -5,22 +5,22 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2017-07-31T12:03:40.762Z",
-    "end": "2017-07-31T12:03:40.769Z",
-    "duration": 7
+    "start": "2017-08-18T01:11:32.137Z",
+    "end": "2017-08-18T01:11:32.154Z",
+    "duration": 17
   },
   "tests": [
     {
       "title": "should be equal to true",
       "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] ) > 4\" should be equal to true",
-      "duration": 1,
+      "duration": 4,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "should be equal to false",
       "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] ) > 6\" should be equal to false",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -34,7 +34,7 @@
     {
       "title": "should be equal to true",
       "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 )\" should be equal to true",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
@@ -45,14 +45,14 @@
     {
       "title": "should be equal to true",
       "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] ) > 4\" should be equal to true",
-      "duration": 1,
+      "duration": 4,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "should be equal to false",
       "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] ) > 6\" should be equal to false",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -66,7 +66,7 @@
     {
       "title": "should be equal to true",
       "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 )\" should be equal to true",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }

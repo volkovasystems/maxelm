@@ -1,5 +1,5 @@
 exports.config = {
-	"specs": ["./test.bridge.js"],
+	"specs": [ "./test.bridge.js" ],
 	"maxInstances": 10,
 	"capabilities": [
 		{
@@ -17,14 +17,14 @@ exports.config = {
 	"logLevel": "verbose",
 	"coloredLogs": true,
 	"bail": 0,
-	"screenshotPath": require("os").tmpdir(),
+	"screenshotPath": require( "os" ).tmpdir( ),
 	"baseUrl": "http://localhost",
 	"waitforTimeout": 1000,
 	"connectionRetryTimeout": 1000,
 	"connectionRetryCount": 10,
-	"services": ["selenium-standalone"],
+	"services": [ "selenium-standalone" ],
 	"framework": "mocha",
-	"reporters": ["json"],
+	"reporters": [ "json" ],
 	"reporterOptions": {
 		"outputDir": "./",
 		"filename": "test.client",

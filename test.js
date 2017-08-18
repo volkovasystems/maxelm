@@ -68,7 +68,7 @@ const maxelm = require( "./maxelm.js" );
 //: @server:
 
 describe( "maxelm", ( ) => {
-	
+
 	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] ) > 4"`, ( ) => {
 		it( "should be equal to true", ( ) => {
 
@@ -101,7 +101,6 @@ describe( "maxelm", ( ) => {
 		} );
 	} );
 } );
-
 
 //: @end-server
 
