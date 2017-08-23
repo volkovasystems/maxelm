@@ -89,14 +89,6 @@ describe( "maxelm", ( ) => {
 		} );
 	} );
 
-	describe( "`maxelm( [ 1, 2, 3, 4, 5 ] )`", ( ) => {
-		it( "should be equal to 5", ( ) => {
-
-			assert.equal( maxelm( [ 1, 2, 3, 4, 5 ] ), 5 );
-
-		} );
-	} );
-
 	describe( "`maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 
@@ -126,14 +118,6 @@ describe( "maxelm", ( ) => {
 		it( "should be equal to false", ( ) => {
 
 			assert.equal( maxelm( [ 1, 2, 3, 4, 5 ] ) > 6, false );
-
-		} );
-	} );
-
-	describe( "`maxelm( [ 1, 2, 3, 4, 5 ] )`", ( ) => {
-		it( "should be equal to 5", ( ) => {
-
-			assert.equal( maxelm( [ 1, 2, 3, 4, 5 ] ), 5 );
 
 		} );
 	} );
@@ -189,24 +173,7 @@ describe( "maxelm", ( ) => {
 
 		} );
 	} );
-
-
-	describe( "`maxelm( [ 1, 2, 3, 4, 5 ] )`", ( ) => {
-		it( "should be equal to 5", ( ) => {
-
-			let result = browser.url( bridgeURL ).execute(
-
-				function( ){
-					return maxelm( [ 1, 2, 3, 4, 5 ] );
-				}
-
-			).value;
-
-			assert.equal( result, 5 );
-
-		} );
-	} );
-
+	
 
 	describe( "`maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 )`", ( ) => {
 		it( "should be equal to true", ( ) => {
