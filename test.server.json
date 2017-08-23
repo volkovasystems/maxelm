@@ -1,74 +1,60 @@
 {
-  "stats": {
-    "suites": 5,
-    "tests": 4,
-    "passes": 4,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-18T01:11:32.137Z",
-    "end": "2017-08-18T01:11:32.154Z",
-    "duration": 17
-  },
-  "tests": [
-    {
-      "title": "should be equal to true",
-      "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] ) > 4\" should be equal to true",
-      "duration": 4,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to false",
-      "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] ) > 6\" should be equal to false",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 5",
-      "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] )\" should be equal to 5",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to true",
-      "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 )\" should be equal to true",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ],
-  "pending": [],
-  "failures": [],
-  "passes": [
-    {
-      "title": "should be equal to true",
-      "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] ) > 4\" should be equal to true",
-      "duration": 4,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to false",
-      "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] ) > 6\" should be equal to false",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 5",
-      "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] )\" should be equal to 5",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to true",
-      "fullTitle": "maxelm \"maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 )\" should be equal to true",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ]
+	"stats": {
+		"suites": 4,
+		"tests": 3,
+		"passes": 3,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-23T10:12:01.403Z",
+		"end": "2017-08-23T10:12:01.409Z",
+		"duration": 6
+	},
+	"tests": [
+		{
+			"title": "should be equal to true",
+			"fullTitle": "maxelm `maxelm( [ 1, 2, 3, 4, 5 ] ) > 4` should be equal to true",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to false",
+			"fullTitle": "maxelm `maxelm( [ 1, 2, 3, 4, 5 ] ) > 6` should be equal to false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to true",
+			"fullTitle": "maxelm `maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 )` should be equal to true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to true",
+			"fullTitle": "maxelm `maxelm( [ 1, 2, 3, 4, 5 ] ) > 4` should be equal to true",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to false",
+			"fullTitle": "maxelm `maxelm( [ 1, 2, 3, 4, 5 ] ) > 6` should be equal to false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to true",
+			"fullTitle": "maxelm `maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 )` should be equal to true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

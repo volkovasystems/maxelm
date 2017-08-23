@@ -1,0 +1,148 @@
+{
+	"state": {
+		"passed": 3,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-23T10:12:02.626Z",
+	"end": "2017-08-23T10:12:46.958Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "maxelm",
+			"duration": 0,
+			"start": "2017-08-23T10:12:46.605Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "maxelm",
+			"duration": 177,
+			"start": "2017-08-23T10:12:46.606Z",
+			"end": "2017-08-23T10:12:46.783Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-23T10:12:46.607Z",
+					"end": "2017-08-23T10:12:46.607Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "maxelm",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-23T10:12:46.702Z",
+					"end": "2017-08-23T10:12:46.703Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "maxelm",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-23T10:12:46.703Z",
+					"end": "2017-08-23T10:12:46.704Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "maxelm",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-23T10:12:46.744Z",
+					"end": "2017-08-23T10:12:46.744Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "maxelm",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-23T10:12:46.744Z",
+					"end": "2017-08-23T10:12:46.745Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "maxelm",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-23T10:12:46.783Z",
+					"end": "2017-08-23T10:12:46.783Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "maxelm",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-23T10:12:46.783Z",
+					"end": "2017-08-23T10:12:46.784Z",
+					"duration": 1,
+					"title": "\"after all\" hook",
+					"associatedSuite": "maxelm"
+				}
+			]
+		},
+		{
+			"name": "`maxelm( [ 1, 2, 3, 4, 5 ] ) > 4`",
+			"duration": 97,
+			"start": "2017-08-23T10:12:46.606Z",
+			"end": "2017-08-23T10:12:46.703Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-23T10:12:46.607Z",
+					"end": "2017-08-23T10:12:46.702Z",
+					"duration": 95,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`maxelm( [ 1, 2, 3, 4, 5 ] ) > 6`",
+			"duration": 41,
+			"start": "2017-08-23T10:12:46.703Z",
+			"end": "2017-08-23T10:12:46.744Z",
+			"tests": [
+				{
+					"name": "should be equal to false",
+					"start": "2017-08-23T10:12:46.703Z",
+					"end": "2017-08-23T10:12:46.744Z",
+					"duration": 41,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 )`",
+			"duration": 39,
+			"start": "2017-08-23T10:12:46.744Z",
+			"end": "2017-08-23T10:12:46.783Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-23T10:12:46.744Z",
+					"end": "2017-08-23T10:12:46.783Z",
+					"duration": 39,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

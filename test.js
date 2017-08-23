@@ -69,7 +69,7 @@ const maxelm = require( "./maxelm.js" );
 
 describe( "maxelm", ( ) => {
 
-	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] ) > 4"`, ( ) => {
+	describe( "`maxelm( [ 1, 2, 3, 4, 5 ] ) > 4`", ( ) => {
 		it( "should be equal to true", ( ) => {
 
 			assert.equal( maxelm( [ 1, 2, 3, 4, 5 ] ) > 4, true );
@@ -77,7 +77,7 @@ describe( "maxelm", ( ) => {
 		} );
 	} );
 
-	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] ) > 6"`, ( ) => {
+	describe( "`maxelm( [ 1, 2, 3, 4, 5 ] ) > 6`", ( ) => {
 		it( "should be equal to false", ( ) => {
 
 			assert.equal( maxelm( [ 1, 2, 3, 4, 5 ] ) > 6, false );
@@ -85,21 +85,14 @@ describe( "maxelm", ( ) => {
 		} );
 	} );
 
-	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] )"`, ( ) => {
-		it( "should be equal to 5", ( ) => {
-
-			assert.equal( maxelm( [ 1, 2, 3, 4, 5 ] ), 5 );
-
-		} );
-	} );
-
-	describe( `"maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 )"`, ( ) => {
+	describe( "`maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 
 			assert.equal( maxelm( [ 1, 2, 3, 4, 5 ] ).compare( 7 ), true );
 
 		} );
 	} );
+
 } );
 
 //: @end-server
